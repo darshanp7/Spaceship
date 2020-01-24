@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Gold
+  - Silver
+  - Bronze
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -13,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Screen Bounds
+  - Spaceship
+  - Obstacles
+  - Collectables
+  - Weapons
   - 
   - 
   - 

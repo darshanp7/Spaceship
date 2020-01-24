@@ -18,8 +18,13 @@ public class BombSpawner : MonoBehaviour
 
     void HandleFingerTap(Lean.Touch.LeanFinger finger)
     {
-        Debug.Log("You just tapped the screen with finger " + finger.Index + " at " + finger.ScreenPosition);
-        GameObject bombInstance = Instantiate(bomb, this.transform.position, Quaternion.identity);
-        bombInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 200);
+        //Fire(finger);
+    }
+
+    public void Fire()
+    {
+        GameObject bombInstance = Instantiate(bomb, new Vector3(this.transform.position.x, this.transform.position.y - 0.5f, 0), Quaternion.identity);
+        bombInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 400);
+        GetComponent<Spaceship>().energyBar.NewValue -= 0.05f;
     }
 }

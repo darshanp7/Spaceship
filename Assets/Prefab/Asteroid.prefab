@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3208519162324373214}
   - component: {fileID: 6412969551838849215}
-  m_Layer: 0
+  - component: {fileID: 8026207978766482556}
+  m_Layer: 10
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +60,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8026207978766482556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751523842913382829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1df86eeb1c33a142b2f8e8637ffd653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2570601505753493419
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1286880242619157205}
   - component: {fileID: 8521029967624672975}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,11 +164,12 @@ GameObject:
   - component: {fileID: 3186183418444899512}
   - component: {fileID: 3186183418444899513}
   - component: {fileID: 1260471416}
+  - component: {fileID: 267315438269576886}
   - component: {fileID: 671916429078597337}
   - component: {fileID: 5017261470013776975}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Asteroid
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,6 +255,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0147154415, y: -0.05603445}
   m_Size: {x: 1.8732204, y: 1.8545427}
   m_Direction: 1
+--- !u!114 &267315438269576886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186183418444899514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96da84cb06fdc3b428263d9113f11b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &671916429078597337
 Rigidbody2D:
   serializedVersion: 4
@@ -284,7 +310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4548255910337102821}
   - component: {fileID: 7675609125826859008}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3038130860122705129}
   - component: {fileID: 312883893327667692}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5942478074988080851}
   - component: {fileID: 804096422588985128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6655423264432250263}
   - component: {fileID: 4182519273450179423}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7962460187402471520}
   - component: {fileID: 4050868465771131548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167987443629258377}
   - component: {fileID: 4636901579501082406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7165674698765011267}
   - component: {fileID: 3056959868135722134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,7 +877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721934931338113118}
   - component: {fileID: 5789707479136349696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rock_broken_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
