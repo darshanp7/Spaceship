@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum Asteroids
+{
+    rock,
+    gold,
+    silver,
+    bronze
+}
+
 public class AsteroidGenerator : MonoBehaviour
 {
     public GameObject asteroidPrefab;
@@ -57,6 +66,17 @@ public class AsteroidGenerator : MonoBehaviour
             SpawnBronze(); 
         }
     }
+
+    //void SpawnAsteroid(Asteroids asteroidType, )
+    //{
+    //    spawnTimer -= Time.deltaTime;
+    //    if (spawnTimer <= 0)
+    //    {
+    //        spawnTimer += Random.Range(minimumAsteroidSpawnTime, maximumAsteroidSpawnTime);
+    //        GameObject asteroid = Instantiate(asteroidPrefab, new Vector3(Random.Range(xMax, xMin), Random.Range(yMax, yMin), 0), Quaternion.identity);
+    //        asteroid.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 50);
+    //    }
+    //}
 
     void SpawnAsteroids()
     {
