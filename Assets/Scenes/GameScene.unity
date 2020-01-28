@@ -1661,6 +1661,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950505615}
   m_CullTransparentMesh: 0
+--- !u!1 &1000099027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000099028}
+  m_Layer: 9
+  m_Name: BombSpawnArea1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1000099028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000099027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.788, y: -1.085, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1986788924}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1001226436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,12 +3044,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1986788924}
   - component: {fileID: 1986788923}
-  - component: {fileID: 1986788925}
-  - component: {fileID: 1986788926}
-  - component: {fileID: 1986788930}
-  - component: {fileID: 1986788927}
-  - component: {fileID: 1986788928}
   - component: {fileID: 1986788929}
+  - component: {fileID: 1986788927}
+  - component: {fileID: 1986788925}
+  - component: {fileID: 1986788928}
+  - component: {fileID: 1986788930}
+  - component: {fileID: 1986788926}
   m_Layer: 9
   m_Name: Spaceship
   m_TagString: Untagged
@@ -3087,7 +3117,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.9, y: 0.21, z: 0}
   m_LocalScale: {x: 0.65, y: 0.65, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1000099028}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3103,8 +3134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90dbd5588efbc944da8da33b7d1b5e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  variableJoystick: {fileID: 893572026}
   goldCountText: {fileID: 461863914}
   silverCountText: {fileID: 2090143736}
   bronzeCountText: {fileID: 237632047}
@@ -3118,20 +3147,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986788922}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eda371e5375f454490a86f21559ee38, type: 3}
+  m_Script: {fileID: 11500000, guid: 7727a20ddf1d85445971298b1e9b27dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  Camera: {fileID: 1617141242}
-  Dampening: -1
-  remainingTranslation: {x: 0, y: 0, z: 0}
 --- !u!70 &1986788927
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3160,7 +3180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 394763deadaa8da40a0ea8a78e49c2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomb: {fileID: 3722957187251222366, guid: 6bcab1594c9ba404eab7de8095c22703, type: 3}
+  bombPrefab: {fileID: 3722957187251222366, guid: 6bcab1594c9ba404eab7de8095c22703,
+    type: 3}
+  bombSpawnTransform: {fileID: 1000099028}
 --- !u!50 &1986788929
 Rigidbody2D:
   serializedVersion: 4
@@ -3189,48 +3211,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986788922}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b29544581cbff48a74923442363fb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eeb9f9803926b24b9d76888df477044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RequiredAngle: 0
-  RequiredArc: -1
-  onFinger:
-    m_PersistentCalls:
-      m_Calls: []
-  Modify: 0
-  Coordinate: 0
-  Multiplier: 1
-  onDelta:
-    m_PersistentCalls:
-      m_Calls: []
-  onDistance:
-    m_PersistentCalls:
-      m_Calls: []
-  ScreenDepth:
-    Conversion: 1
-    Camera: {fileID: 0}
-    Object: {fileID: 0}
-    Layers:
-      serializedVersion: 2
-      m_Bits: 4294967291
-    Distance: 0
-  onWorldFrom:
-    m_PersistentCalls:
-      m_Calls: []
-  onWorldTo:
-    m_PersistentCalls:
-      m_Calls: []
-  onWorldDelta:
-    m_PersistentCalls:
-      m_Calls: []
-  onWorldFromTo:
-    m_PersistentCalls:
-      m_Calls: []
-  IgnoreStartedOverGui: 1
-  IgnoreIsOverGui: 0
-  RequiredSelectable: {fileID: 0}
+  speed: 200
+  variableJoystick: {fileID: 893572026}
 --- !u!1 &1995453475
 GameObject:
   m_ObjectHideFlags: 0

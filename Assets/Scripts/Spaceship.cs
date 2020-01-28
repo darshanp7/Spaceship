@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class Spaceship : MonoBehaviour
 {
 
-    private Rigidbody2D rigidBody;
-    public float speed;
-    public VariableJoystick variableJoystick;
+    
+    
 
 
     //To be refactored Later
@@ -28,22 +27,10 @@ public class Spaceship : MonoBehaviour
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
+        
     }
 
-    void Update()
-    {
-        if(healthBar.NewValue < 0 || energyBar.NewValue < 0)
-        {
-            OnGameOver();
-        }
-    }
-
-    void FixedUpdate()
-    {
-        Vector3 direction = Vector3.up * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-        rigidBody.velocity = (direction * speed * Time.fixedDeltaTime);
-    }
+    
 
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -66,10 +53,6 @@ public class Spaceship : MonoBehaviour
             bronzeCount += 1;
             bronzeCountText.text = bronzeCount.ToString();
         }
-        if(collision.gameObject.tag == "Obstacle")
-        {
-             healthBar.NewValue -= 0.1f; 
-        }
     }
 
     public void OnGameOver()
@@ -78,44 +61,5 @@ public class Spaceship : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         GetComponent<Rigidbody2D>().gravityScale = 20;
     }
-
-    //public void OnSwipeSouth()
-    //{
-    //    rigidBody.AddForce(force * Vector2.down);
-    //}
-
-    //public void OnSwipeNorth()
-    //{
-    //    rigidBody.AddForce(force * Vector2.up);
-    //}
-
-    //public void OnSwipeEast()
-    //{
-    //    rigidBody.AddForce(force * Vector2.right);
-    //}
-
-    //public void OnSwipeWest()
-    //{
-    //    rigidBody.AddForce(force * Vector2.left);
-    //}
-
-    //public void OnSwipeSouthEast()
-    //{
-    //    rigidBody.AddForce(new Vector2(force / 2 * 1, force / 2 * -1));
-    //}
-
-    //public void OnSwipeSouthWest()
-    //{
-    //    rigidBody.AddForce(new Vector2(force / 2 * -1, force / 2 * -1));
-    //}
-
-    //public void OnSwipeNorthEast()
-    //{
-    //    rigidBody.AddForce(new Vector2(force / 2 * 1, force / 2 * 1));
-    //}
-
-    //public void OnSwipeNorthWest()
-    //{
-    //    rigidBody.AddForce(new Vector2(force / 2 * -1, force / 2 * 1));
-    //}
+    
 }
