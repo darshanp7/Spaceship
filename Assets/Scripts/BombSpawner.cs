@@ -11,6 +11,6 @@ public class BombSpawner : MonoBehaviour
     {
         GameObject bombInstance = Instantiate(bombPrefab, bombSpawnTransform.position, Quaternion.identity);
         bombInstance.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 400);
-        GetComponent<Spaceship>().energyBar.NewValue -= 0.05f;
+        SpaceshipEventsBroker.CallFireWeapon(-0.05f);
     }
 }

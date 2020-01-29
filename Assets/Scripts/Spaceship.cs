@@ -6,11 +6,7 @@ using UnityEngine.UI;
 
 public class Spaceship : MonoBehaviour
 {
-
     
-    
-
-
     //To be refactored Later
     int goldCount;
     int silverCount;
@@ -29,10 +25,7 @@ public class Spaceship : MonoBehaviour
     {
         
     }
-
     
-
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Gold")

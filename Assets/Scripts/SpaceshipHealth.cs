@@ -8,15 +8,16 @@ public class SpaceshipHealth : MonoBehaviour
     private float maxHealth = 1.0f;
     private float health;
 
-    public event Action Die;
-    public event Action HitByAsteroid;
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
     void Update()
     {
         if(health <= 0)
         {
-            if (Die != null)
-                Die();
+            SpaceshipEventsBroker.CallDie();
         }
     }
 
@@ -24,8 +25,8 @@ public class SpaceshipHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            if (HitByAsteroid != null)
-                HitByAsteroid();
+            health += -0.1f;
+            SpaceshipEventsBroker.CallHitByAsteroid(-0.1f);
         }
     }
 }
