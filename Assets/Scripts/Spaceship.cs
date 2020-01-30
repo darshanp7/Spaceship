@@ -16,9 +16,6 @@ public class Spaceship : MonoBehaviour
     public Text silverCountText;
     public Text bronzeCountText;
 
-    public UIBarScript healthBar;
-    public UIBarScript energyBar;
-
     public AsteroidGenerator asteroidGenerator;
 
     void Start()
@@ -46,13 +43,5 @@ public class Spaceship : MonoBehaviour
             bronzeCount += 1;
             bronzeCountText.text = bronzeCount.ToString();
         }
-    }
-
-    public void OnGameOver()
-    {
-        asteroidGenerator.StopSpawning();
-        GetComponent<CapsuleCollider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().gravityScale = 20;
-    }
-    
+    } 
 }

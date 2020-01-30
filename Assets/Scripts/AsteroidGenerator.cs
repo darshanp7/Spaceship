@@ -48,6 +48,17 @@ public class AsteroidGenerator : MonoBehaviour
     {
         isSpawn = false;
     }
+
+    private void OnEnable()
+    {
+        SpaceshipEventsBroker.Die += StopSpawning;
+    }
+
+    private void OnDisable()
+    {
+        SpaceshipEventsBroker.Die -= StopSpawning;
+    }
+
     void Start()
     {
         xMax = GetComponent<SpriteRenderer>().bounds.max.x;

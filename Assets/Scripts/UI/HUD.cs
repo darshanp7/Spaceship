@@ -15,6 +15,7 @@ public class HUD : MonoBehaviour
 
     private void Hide()
     {
+        Debug.Log("Playing Hiding Animation");
         topPanel.GetComponent<Animator>().SetBool("PlayHideAnimation", true);
         bottomPanel.GetComponent<Animator>().SetBool("PlayHideAnimation", true);
     }

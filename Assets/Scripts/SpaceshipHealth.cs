@@ -18,6 +18,8 @@ public class SpaceshipHealth : MonoBehaviour
         if(health <= 0)
         {
             SpaceshipEventsBroker.CallDie();
+            this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+            this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 100;
         }
     }
 

@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-
-    void Start()
-    {
-        
-    }
-
     void OnCollisionEnter2D(Collision2D collision2D)
     {
         GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
