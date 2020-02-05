@@ -15,6 +15,11 @@ public class SwooshBackAnimation : MonoBehaviour
         this.GetComponent<Animator>().SetBool("PlayPushBackEffect", true);
     }
 
+    private void OnSwooshBackEndEvent()
+    {
+        this.GetComponent<Animator>().SetBool("PlayPushBackEffect", false);
+    }
+
     private void OnDisable()
     {
         SpaceshipEventsBroker.PushedBack -= PlaySwooshBackAnimation;
