@@ -33,9 +33,10 @@ public class AsteroidGenerator : MonoBehaviour
     float yMin;
 
     float spawnTimer = 0;
-    float goldSpawnTimer = 0;
-    float silverSpawnTimer = 0;
-    float bronzeSpawnTimer = 0;
+    float goldSpawnTimer = 15;
+    float silverSpawnTimer = 10;
+    float bronzeSpawnTimer = 5;
+    float initialWaitTime = 10;
 
     bool isSpawn = true;
 
@@ -69,25 +70,23 @@ public class AsteroidGenerator : MonoBehaviour
 
     void Update()
     {
+        initialWaitTime -= Time.deltaTime;
         if (isSpawn)
         {
             SpawnAsteroids();
-            SpawnGold();
-            SpawnSilver();
-            SpawnBronze(); 
+            if (initialWaitTime < 0)
+            {
+                SpawnCollectibles(); 
+            }
         }
     }
 
-    //void SpawnAsteroid(Asteroids asteroidType, )
-    //{
-    //    spawnTimer -= Time.deltaTime;
-    //    if (spawnTimer <= 0)
-    //    {
-    //        spawnTimer += Random.Range(minimumAsteroidSpawnTime, maximumAsteroidSpawnTime);
-    //        GameObject asteroid = Instantiate(asteroidPrefab, new Vector3(Random.Range(xMax, xMin), Random.Range(yMax, yMin), 0), Quaternion.identity);
-    //        asteroid.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 50);
-    //    }
-    //}
+    private void SpawnCollectibles()
+    {
+        SpawnGold();
+        SpawnSilver();
+        SpawnBronze();
+    }
 
     void SpawnAsteroids()
     {
@@ -102,10 +101,10 @@ public class AsteroidGenerator : MonoBehaviour
 
     void SpawnGold()
     {
-        spawnTimer -= Time.deltaTime;
-        if (spawnTimer <= 0)
+        goldSpawnTimer -= Time.deltaTime;
+        if (goldSpawnTimer <= 0)
         {
-            spawnTimer += Random.Range(minimumGoldSpawnTime, maximumGoldSpawnTime);
+            goldSpawnTimer += Random.Range(minimumGoldSpawnTime, maximumGoldSpawnTime);
             GameObject asteroid = Instantiate(goldAsteroidPrefab, new Vector3(Random.Range(xMax, xMin), Random.Range(yMax, yMin), 0), Quaternion.identity);
             asteroid.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 100);
         }
@@ -113,10 +112,10 @@ public class AsteroidGenerator : MonoBehaviour
 
     void SpawnSilver()
     {
-        spawnTimer -= Time.deltaTime;
-        if (spawnTimer <= 0)
+        silverSpawnTimer -= Time.deltaTime;
+        if (silverSpawnTimer <= 0)
         {
-            spawnTimer += Random.Range(minimumSilverSpawnTime, maximumSilverSpawnTime);
+            silverSpawnTimer += Random.Range(minimumSilverSpawnTime, maximumSilverSpawnTime);
             GameObject asteroid = Instantiate(silverAsteroidPrefab, new Vector3(Random.Range(xMax, xMin), Random.Range(yMax, yMin), 0), Quaternion.identity);
             asteroid.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 100);
         }
@@ -124,10 +123,10 @@ public class AsteroidGenerator : MonoBehaviour
 
     void SpawnBronze()
     {
-        spawnTimer -= Time.deltaTime;
-        if (spawnTimer <= 0)
+        bronzeSpawnTimer -= Time.deltaTime;
+        if (bronzeSpawnTimer <= 0)
         {
-            spawnTimer += Random.Range(minimumBronzeSpawnTime, maximumBronzeSpawnTime);
+            bronzeSpawnTimer += Random.Range(minimumBronzeSpawnTime, maximumBronzeSpawnTime);
             GameObject asteroid = Instantiate(bronzeAsteroidPrefab, new Vector3(Random.Range(xMax, xMin), Random.Range(yMax, yMin), 0), Quaternion.identity);
             asteroid.GetComponent<Rigidbody2D>().AddForce(Vector3.left * 100);
         }

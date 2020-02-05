@@ -5,6 +5,7 @@ public class SpaceshipEventsBroker
     public static event Action<float> HitByAsteroid;
     public static event Action Die;
     public static event Action<float> FireWeapon;
+    public static event Action PushedBack;
 
     public static void CallDie()
     {
@@ -22,5 +23,11 @@ public class SpaceshipEventsBroker
     {
         if (FireWeapon != null)
             FireWeapon(fuelAmount);
+    }
+
+    public static void CallPushBack()
+    {
+        if (PushedBack != null)
+            PushedBack();
     }
 }
