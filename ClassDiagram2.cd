@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutoDestroy" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\AutoDestroy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bomb" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAAAAAAAAAAAAAAAAIIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Bomb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombSpawner" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\BombSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bronze" Collapsed="true">
+    <Position X="8.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectibles\Bronze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collectible" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectibles\Collectible.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold" Collapsed="true">
+    <Position X="11" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectibles\Gold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Silver" Collapsed="true">
+    <Position X="13.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectibles\Silver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explode" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Explode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectSpawner" Collapsed="true">
+    <Position X="34" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAgAAAAAAEAAAAgIAgAEAAMAAEAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\ObjectSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacles\Asteroid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AsteroidBreakAnimation" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacles\AsteroidBreakAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AsteroidGenerator" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARiAAAAEGAgIAAgRAAggIGgIEgCkAAMAAkBAAQgCAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacles\AsteroidGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="35.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacles\Obstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parallax" Collapsed="true">
+    <Position X="23.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Parallax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceJunk" Collapsed="true">
+    <Position X="25.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SpaceJunk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spaceship" Collapsed="true">
+    <Position X="27" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAKAAAAAAgAAAAEAAAAAAAAAAAAAkAAAEAAI=</HashCode>
+      <FileName>Assets\Scripts\Spaceship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceshipEngine" Collapsed="true">
+    <Position X="28.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQIAAAAAiAAAAAAAAgAAAAAAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\SpaceshipEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceshipEventsBroker" Collapsed="true">
+    <Position X="30.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAgAAAAAAAEAgABAQAAACABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\SpaceshipEventsBroker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceshipHealth" Collapsed="true">
+    <Position X="32.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\SpaceshipHealth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwooshBackAnimation" Collapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\SwooshBackAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndGamePanel" Collapsed="true">
+    <Position X="35.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\EndGamePanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnergyBar" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\EnergyBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthBar" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\HealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUD" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAEAAAAgAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\HUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu" Collapsed="true">
+    <Position X="32.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JoystickPlayerExample" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAEAAAAAAAAAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Examples\JoystickPlayerExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JoystickSetterExample" Collapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAAAAAAAAAAACAAAAAQAQAQAACAAEIAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Examples\JoystickSetterExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Joystick" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABACIACRICAAEACBAASICAAEAADAKAQQCCAEAIAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Base\Joystick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DynamicJoystick" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAACAIAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedJoystick" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FloatingJoystick" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VariableJoystick" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAKAACAIAgAAAAAAAAAAAAAAAgAAACIAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TouchControllerGameManager" Collapsed="true">
+    <Position X="25.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAASiEADQAEKIUAYtQgEQCAAgAEQQKAyEACAAAiEE=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Demo Scene &amp; Assets\TouchControllerGameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExampleImplementation" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAQAAAAAIQoAAQQCAAAAAAAIAgAAAAAACAA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\ExampleImplementation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JoystickMovement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAQAAAAAAIAABAAABgABAAAAAAAAAIAAAACAAIAEA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Joystick Movement Controller\JoystickMovement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SwipeEvents" Collapsed="true">
+    <Position X="34" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAgAARoAAAQCAAAAAAAAAgAAAAAgAEA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Swipe Controller\SwipeEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwipeManager" Collapsed="true">
+    <Position X="35.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA2UFiCA8CBgACIAQEsiIAQCIAIAkAQAAAFEAAALAAA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Swipe Controller\SwipeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiltController" Collapsed="true">
+    <Position X="23.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Tilt Controller\TiltController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisualizeTouch" Collapsed="true">
+    <Position X="30.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Visual Touch\VisualizeTouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrthoZoomAndPan" Collapsed="true">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QARAgAAAgGCAIoAAEKAAAAoAAIAAEAHABAAAAAAgAAA=</HashCode>
+      <FileName>Assets\Third Party\Touch Controller Kit Lite\Scripts\Zoom And Pan\OrthoZoomAndPan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlBar" Collapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\UIBars\Scripts\ControlBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CriteriaRule" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAAABAEAgAgEAAAAAABiAAEAAAACQAAAAAABAA=</HashCode>
+      <FileName>Assets\Third Party\UIBars\Scripts\CriteriaRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIBarScript" Collapsed="true">
+    <Position X="27" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAACgCIAAAAEQApAAAYEAACAAKgAEAAAEg=</HashCode>
+      <FileName>Assets\Third Party\UIBars\Scripts\UIBarScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpdateAnimationRule" Collapsed="true">
+    <Position X="28.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAACCAAAgAgAAAEAAABCAAEAAAACQAAAAAADAA=</HashCode>
+      <FileName>Assets\Third Party\UIBars\Scripts\UpdateAnimationRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanCircuit_Inspector" Collapsed="true">
+    <Position X="17" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanCircuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanCircuit" Collapsed="true">
+    <Position X="35.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAgAQQBAACAQIBEgAAEAIIAAAABBAACAAAAAAAAIIAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanCircuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanDocumentation_Inspector" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAACAAABABAABAAAAABAAQAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanDocumentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanDocumentation" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAEAAAAEAAAAAAAAAAAAIAQAAQgEAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanDocumentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanLinkTo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAgAAAAAAAAAAAAAEAAAAAAAAAEAAQAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanLinkTo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lean.Common.Examples.LeanLinkTo_Editor" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Examples\Scripts\LeanLinkTo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.LeanHelper" Collapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAAAAAIAAAAAAgAABAAABAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Scripts\LeanHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Common.LeanInspector&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAAAIEAAAgAgBASEAACDIAAAAAAECEAIACEAAgAAE=</HashCode>
+      <FileName>Assets\Third Party\Lean\Common\Scripts\LeanInspector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanDestroy" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanDestroy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanDragCamera" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAABAAIIAAAJAgAAAAEAAAAgACAAAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanDragCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanDragTrail" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAQABAAAIwAABAAAAAAEABAIwAGAAAAACEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanDragTrail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanDragTranslate" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAABAAAIAEABAgAgAAEAAAAgAAEAAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanDragTranslate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerData" Collapsed="true">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAQAAAAIgAAAIAAAQAEAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerDown" Collapsed="true">
+    <Position X="35.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAEAIABBACAAAAAAAAAAAAAEAIQACAAAAACEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerDown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerDown_Inspector" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerDown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerFilter_Drawer" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerOld" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAECIABBACAAACBAAAAAAAAEAIAACAAAAACAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerOld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerOld_Inspector" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerOld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerSet" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACUAAAIkBAACQAAABEBAAAAAgGAIAIGgAAEBCEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerSet_Inspector" Collapsed="true">
+    <Position X="19.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerSwipe" Collapsed="true">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAABAACAAAABAAAAAAAAEAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerSwipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerSwipe_Inspector" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerSwipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerTap" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAEAECIABBACAAAABAAIAAAAAEAIAACCAAAACAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerTap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerTap_Inspector" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerTap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerUp" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAECIABBACAgAABAAAAAAAAEAIAACAAAAACAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFingerUp_Inspector" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanInfoText" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAASAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanInfoText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanPath" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAIioIAAIAgAARAgAAAAAAAAYAAgAAAAAAQIAEEAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanPinchScale" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwCAAAAAAgABAAAIAEABAgAAAAEAAAAgAAEAAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanPinchScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanPlane" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAIAIAxAAIAAAAAAAAAAAAAAAAAAAAAAQAACgAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanPlane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanPulseScale" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAAEAAAAAAgAAAAABIEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanPulseScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanRoll" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAgACAAAAAAAAkAACAAAgAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanRoll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanScreenDepth_Drawer" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanScreenDepth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelect" Collapsed="true">
+    <Position X="32.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQACAAAgAACAAgAAAAACAAAAAAAoAAAIQAAAQAAgmAQ=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectable" Collapsed="true">
+    <Position X="34" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAgAUAxAIBAkAAIAgAKSAAEEAgAAhIIQSBQSCEEKAE=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectable_Inspector" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectableBehaviour" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAADAAAAAQAAAACAAAAAABAAAIAAAAAAAAOAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectableBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectableGraphicColor" Collapsed="true">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQAIEQ=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectableGraphicColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectableRendererColor" Collapsed="true">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAQAAAAAAAgAAAAAAABIAAAAAAAAAAAAAAAQAIEQ=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectableRendererColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSelectableSpriteRendererColor" Collapsed="true">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAQAIEQ=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSelectableSpriteRendererColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSpawn" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSpawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSwipeBase" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAICQAAAIkBAACQAAAAEBAAAAAgCAAIIGgQAABAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSwipeBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSwipeBase_Inspector&lt;T&gt;" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanSwipeBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanTouchEvents" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAACggAAAAAIAAAAAAAIAAAAAAEACAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanTouchEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanTwistRotate" Collapsed="true">
+    <Position X="28.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAxCAAAAAAAABAAAIAEABAgAkCAEAAAAgAAEAAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanTwistRotate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanTwistRotateAxis" Collapsed="true">
+    <Position X="30.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAABQAAIAAABAAAAAAEAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanTwistRotateAxis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanFinger" Collapsed="true">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoYCkMAEAigBAACUmZCADmAAAgAIAEDSAMAQxAAgAY=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Scripts\LeanFinger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanGesture" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIIAAFABSAAAAAAAAEAACOCAgEAQAAACQCFSAALQAQ=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Scripts\LeanGesture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanSnapshot" Collapsed="true">
+    <Position X="35.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAEIkABAAAAAACAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Scripts\LeanSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanTouch" Collapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAQEAAFUhUAABGCAIQcIZRge0CQCAEBYQACIEAQ2CFA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Scripts\LeanTouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lean.Touch.LeanTouch_Editor" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAIAAAAAAAAESEAACAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Scripts\LeanTouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Lean.Touch.LeanFingerFilter" Collapsed="true">
+    <Position X="21.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAEAAAEAAAAAIAAABAAAEBAAAEABgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanFingerFilter.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Lean.Touch.LeanScreenDepth" Collapsed="true">
+    <Position X="23.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAgAogAIAAAAAQCAAFEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Lean\Touch\Examples\Scripts\LeanScreenDepth.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Asteroids" Collapsed="true">
+    <Position X="21.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacles\AsteroidGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AxisOptions" Collapsed="true">
+    <Position X="23.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Base\Joystick.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JoystickType" Collapsed="true">
+    <Position X="25.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Third Party\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

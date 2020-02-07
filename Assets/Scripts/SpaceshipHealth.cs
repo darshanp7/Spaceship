@@ -27,8 +27,9 @@ public class SpaceshipHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            health += -0.1f;
-            SpaceshipEventsBroker.CallHitByAsteroid(-0.1f);
+            float damageTaken = collision.gameObject.GetComponent<Obstacle>().getDamageInflicted();
+            health += damageTaken;
+            SpaceshipEventsBroker.CallHitByAsteroid(damageTaken);
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpaceJunk : MonoBehaviour
+public class SpaceJunk : Obstacle
 {
     public float angVelocity;
 

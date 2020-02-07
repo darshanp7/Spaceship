@@ -5,5 +5,10 @@ using UnityEngine;
 public abstract class Obstacle : MonoBehaviour
 {
     [SerializeField]
-    private float damage;
+    private float damageInflicted;
+
+    public float getDamageInflicted()
+    {
+        return damageInflicted;
+    }
 }

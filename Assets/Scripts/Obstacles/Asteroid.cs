@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Asteroid : MonoBehaviour
+public class Asteroid : Obstacle
 {
     void OnCollisionEnter2D(Collision2D collision2D)
     {

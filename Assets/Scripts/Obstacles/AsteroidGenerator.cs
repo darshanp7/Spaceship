@@ -2,15 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public enum Asteroids
-{
-    rock,
-    gold,
-    silver,
-    bronze
-}
-
 public class AsteroidGenerator : MonoBehaviour
 {
     public GameObject asteroidPrefab;

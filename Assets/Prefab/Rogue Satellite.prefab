@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7939663346195199263}
   - component: {fileID: 7939663346195199262}
   - component: {fileID: 7939663346195199261}
+  - component: {fileID: 1846267365}
   m_Layer: 0
   m_Name: Rogue Satellite
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7939663346195199260}
-  m_LocalRotation: {x: -0, y: -0, z: 0.42956656, w: 0.9030352}
+  m_LocalRotation: {x: 0, y: 0, z: 0.4295657, w: 0.90303564}
   m_LocalPosition: {x: 4.36, y: 0.52, z: 0}
   m_LocalScale: {x: 0.509, y: 0.509, z: 0.509}
   m_Children: []
@@ -120,3 +121,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1846267365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939663346195199260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afb6d8478fbd704cac966c69255f132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageInflicted: -0.2

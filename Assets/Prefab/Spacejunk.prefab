@@ -368,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4741c07547689b4dad7f1257037cf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageInflicted: -0.15
   angVelocity: 5
 --- !u!1 &2419542320835107018
 GameObject:
