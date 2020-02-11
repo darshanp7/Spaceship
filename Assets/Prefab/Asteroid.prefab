@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageInflicted: -0.5
+  spawnRate: 2
 --- !u!1 &4213530222719589585
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class Collectible : MonoBehaviour
 {
-    public GameObject collectiblePrefab;
+    [SerializeField]
+    private int pointsAwarded;
+    [SerializeField]
+    private float spawnRate;
     
 }

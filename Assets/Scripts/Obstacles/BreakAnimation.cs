@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidBreakAnimation : MonoBehaviour
+public class BreakAnimation : MonoBehaviour
 {
     public void OnAnimationEnd()
     {
