@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Silver : Collectible
 {
+    public float silverSpeed;
 
-    void Start()
+    void Awake()
     {
-        
+        base.Speed = silverSpeed;
     }
     
     void Update()

@@ -9,6 +9,8 @@ public abstract class Obstacle : MonoBehaviour
     [SerializeField]
     private float spawnRate;
 
+    public float Speed { get; protected set; }
+
     public float getDamageToBeInflicted()
     {
         return damageInflicted;

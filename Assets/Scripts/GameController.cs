@@ -13,16 +13,22 @@ public class GameController : MonoBehaviour
 
     public LevelDefinition CurrentLevel { get; private set; }
     public float TimeLeftInLevel { get; private set; }
+    public bool AllObstaclesGenerated { get; set; }
+    public bool AllCollectiblesGenerated { get; set; }
 
-    private void Start()
+    private void Awake()
     {
+        AllCollectiblesGenerated = false;
+        AllObstaclesGenerated = false;
         StartLevel(currentLevelIndex);
     }
 
     private void Update()
     {
-        TimeLeftInLevel -= Time.deltaTime;
-        if (TimeLeftInLevel < 0) EndLevel();
+        //TimeLeftInLevel -= Time.deltaTime;
+        //if (TimeLeftInLevel < 0) EndLevel();
+        if (CheckLevelEnded())
+            EndLevel();
     }
 
     private void StartLevel(int currentLevelIndex)
@@ -33,11 +39,19 @@ public class GameController : MonoBehaviour
 
     private void EndLevel()
     {
+        Debug.Log("Level Ended");
         currentLevelIndex++;
 
         if(currentLevelIndex < levels.Length)
         {
             //Load Next Level
         }
+    }
+
+    private bool CheckLevelEnded()
+    {
+        return GameObject.FindGameObjectWithTag("Obstacles").transform.childCount == 0
+            && GameObject.FindGameObjectWithTag("Collectibles").transform.childCount == 0
+            && AllCollectiblesGenerated && AllCollectiblesGenerated;
     }
 }

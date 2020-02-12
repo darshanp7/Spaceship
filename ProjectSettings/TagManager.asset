@@ -8,6 +8,8 @@ TagManager:
   - Silver
   - Bronze
   - Obstacle
+  - Obstacles
+  - Collectibles
   layers:
   - Default
   - TransparentFX

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Gold : Collectible
 {
-    
-    void Start()
+
+    public float goldSpeed;
+
+    void Awake()
     {
-        
+        base.Speed = goldSpeed;
     }
     
     void Update()

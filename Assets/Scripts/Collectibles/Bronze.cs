@@ -5,9 +5,11 @@ using UnityEngine;
 public class Bronze : Collectible
 {
 
+    public float bronzeSpeed;
+
     void Start()
     {
-        
+        base.Speed = bronzeSpeed;
     }
     
     void Update()
