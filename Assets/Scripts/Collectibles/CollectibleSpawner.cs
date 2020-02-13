@@ -23,17 +23,17 @@ public class CollectibleSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time > nextSpawnTime && collectibleIndex < gameController.CurrentLevel.CollectibleSpawnData.Length)
+        if (Time.time > nextSpawnTime && collectibleIndex < gameController.CurrentLevel.CollectibleSpawnData.Length && !gameController.AllCollectiblesGenerated)
         {
             Spawn(gameController.CurrentLevel.CollectibleSpawnData[collectibleIndex].Collectible);
-            if (collectibleIndex < gameController.CurrentLevel.CollectibleSpawnData.Length)
+            if((collectibleIndex+1) >= gameController.CurrentLevel.CollectibleSpawnData.Length)
             {
-                nextSpawnTime = gameController.CurrentLevel.CollectibleSpawnData[++collectibleIndex].SpawnTime; 
+                gameController.AllCollectiblesGenerated = true;
+                return;
             }
             else
             {
-                gameController.AllCollectiblesGenerated = true;
-                nextSpawnTime = Mathf.Infinity;
+                nextSpawnTime = gameController.CurrentLevel.CollectibleSpawnData[++collectibleIndex].SpawnTime;
             }
         }
     }

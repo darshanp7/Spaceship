@@ -21,14 +21,18 @@ public class ObstacleSpawner : MonoBehaviour
     
     private void Update()
     {
-        if(Time.time > nextSpawnTime && objectIndex < gameController.CurrentLevel.ObstacleSpawnData.Length)
+        if(Time.time > nextSpawnTime && objectIndex < gameController.CurrentLevel.ObstacleSpawnData.Length && !gameController.AllObstaclesGenerated)
         {
             Spawn(gameController.CurrentLevel.ObstacleSpawnData[objectIndex].Obstacle);
-            nextSpawnTime = gameController.CurrentLevel.ObstacleSpawnData[++objectIndex].SpawnTime;
-        }
-        else
-        {
-            gameController.AllObstaclesGenerated = true;
+            if ((objectIndex + 1) >= gameController.CurrentLevel.ObstacleSpawnData.Length)
+            {
+                gameController.AllObstaclesGenerated = true;
+                return;
+            }
+            else
+            {
+                nextSpawnTime = gameController.CurrentLevel.ObstacleSpawnData[++objectIndex].SpawnTime;
+            }
         }
     }
     
