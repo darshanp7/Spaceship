@@ -41,6 +41,7 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Level Ended");
         currentLevelIndex++;
+        GameControllerEventsBroker.CallLevelEnded();
 
         if(currentLevelIndex < levels.Length)
         {

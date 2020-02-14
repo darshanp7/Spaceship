@@ -7,11 +7,13 @@ public class EndGamePanel : MonoBehaviour
     private void OnEnable()
     {
         SpaceshipEventsBroker.Die += Show;
+        GameControllerEventsBroker.LevelEnded += Show;
     }
 
     private void OnDisable()
     {
         SpaceshipEventsBroker.Die -= Show;
+        GameControllerEventsBroker.LevelEnded -= Show;
     }
 
     private void Show()
