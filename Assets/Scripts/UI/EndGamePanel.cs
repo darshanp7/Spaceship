@@ -26,6 +26,11 @@ public class EndGamePanel : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void OnContinue()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void OnMainMenu()
     {
         SceneManager.LoadScene(0);

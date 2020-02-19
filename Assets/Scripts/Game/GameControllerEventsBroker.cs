@@ -7,6 +7,7 @@ public class GameControllerEventsBroker : MonoBehaviour
 
     public static void CallLevelEnded()
     {
+        Debug.Log("Calling Level Ended Action");
         if (LevelEnded != null)
         {
             LevelEnded();

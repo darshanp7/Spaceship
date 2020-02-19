@@ -18,9 +18,12 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        //PlayerPrefs.DeleteAll();
         AllCollectiblesGenerated = false;
         AllObstaclesGenerated = false;
+        currentLevelIndex = GetCurrentLevelIndex();
         StartLevel(currentLevelIndex);
+        
     }
 
     private void Update()
@@ -39,9 +42,11 @@ public class GameController : MonoBehaviour
 
     private void EndLevel()
     {
-        Debug.Log("Level Ended");
         currentLevelIndex++;
+        Debug.Log("Current Level Index " + currentLevelIndex);
+        PlayerPrefs.SetInt("LevelProgress", currentLevelIndex);
         GameControllerEventsBroker.CallLevelEnded();
+        enabled = false;
 
         if(currentLevelIndex < levels.Length)
         {
@@ -54,5 +59,10 @@ public class GameController : MonoBehaviour
         return GameObject.FindGameObjectWithTag("Obstacles").transform.childCount == 0
             && GameObject.FindGameObjectWithTag("Collectibles").transform.childCount == 0
             && AllCollectiblesGenerated && AllCollectiblesGenerated;
+    }
+
+    private int GetCurrentLevelIndex()
+    {
+        return PlayerPrefs.GetInt("LevelProgress");
     }
 }

@@ -13,6 +13,13 @@ public class RogueSatellite : Obstacle
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
+    void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        Animator asteroidBreakAnimator = transform.GetChild(0).GetComponent<Animator>();
+        asteroidBreakAnimator.SetBool("isCollided", true);
+    }
+
     void Update()
     {
         rigidBody.angularVelocity = angVelocity;

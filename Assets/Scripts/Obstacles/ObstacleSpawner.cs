@@ -8,10 +8,12 @@ public class ObstacleSpawner : MonoBehaviour
     private GameController gameController;
     private float nextSpawnTime;
     private int objectIndex = -1;
+    private float timer = 0.0f;
 
     private void Awake()
     {
         gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+
     }
 
     private void Start()
@@ -21,7 +23,8 @@ public class ObstacleSpawner : MonoBehaviour
     
     private void Update()
     {
-        if(Time.time > nextSpawnTime && objectIndex < gameController.CurrentLevel.ObstacleSpawnData.Length && !gameController.AllObstaclesGenerated)
+        timer += Time.deltaTime;
+        if(timer > nextSpawnTime && objectIndex < gameController.CurrentLevel.ObstacleSpawnData.Length && !gameController.AllObstaclesGenerated)
         {
             Spawn(gameController.CurrentLevel.ObstacleSpawnData[objectIndex].Obstacle);
             if ((objectIndex + 1) >= gameController.CurrentLevel.ObstacleSpawnData.Length)

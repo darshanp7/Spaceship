@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     private void OnEnable()
     {
         SpaceshipEventsBroker.Die += Hide;
+        GameControllerEventsBroker.LevelEnded += Hide;
     }
 
     private void Hide()
@@ -23,5 +24,6 @@ public class HUD : MonoBehaviour
     private void OnDisable()
     {
         SpaceshipEventsBroker.Die -= Hide;
+        GameControllerEventsBroker.LevelEnded -= Hide;
     }
 }
