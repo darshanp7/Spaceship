@@ -13,6 +13,7 @@ public class Bomb : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D collision)
     {
+        GetComponent<Collider2D>().enabled = false;
         GameObject explode = Instantiate(explodePrefab, this.transform);
         explodeAnimator = explode.GetComponentInChildren<Animator>();
         RuntimeAnimatorController runAc = explodeAnimator.runtimeAnimatorController;
@@ -24,6 +25,6 @@ public class Bomb : MonoBehaviour
             }
         }
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-        explodeAnimator.SetBool("isTouchGround", true);
+        explodeAnimator.SetBool("isTouchGround", true); //IsTouchGround is equivalent to colliding with obstacles
     }
 }

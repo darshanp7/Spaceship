@@ -18,12 +18,10 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        //PlayerPrefs.DeleteAll();
         AllCollectiblesGenerated = false;
         AllObstaclesGenerated = false;
         currentLevelIndex = GetCurrentLevelIndex();
-        StartLevel(currentLevelIndex);
-        
+        StartLevel(currentLevelIndex);      
     }
 
     private void Update()
@@ -42,15 +40,15 @@ public class GameController : MonoBehaviour
 
     private void EndLevel()
     {
-        currentLevelIndex++;
-        Debug.Log("Current Level Index " + currentLevelIndex);
-        PlayerPrefs.SetInt("LevelProgress", currentLevelIndex);
-        GameControllerEventsBroker.CallLevelEnded();
+        
         enabled = false;
 
         if(currentLevelIndex < levels.Length)
         {
-            //Load Next Level
+            currentLevelIndex++;
+            Debug.Log("Current Level Index " + currentLevelIndex);
+            PlayerPrefs.SetInt("LevelProgress", currentLevelIndex);
+            GameControllerEventsBroker.CallLevelEnded();
         }
     }
 
@@ -63,6 +61,14 @@ public class GameController : MonoBehaviour
 
     private int GetCurrentLevelIndex()
     {
-        return PlayerPrefs.GetInt("LevelProgress");
+        int level = PlayerPrefs.GetInt("LevelProgress");
+        if(level >= levels.Length)
+        {
+            return levels.Length - 1;
+        }
+        else
+        {
+            return level;
+        }
     }
 }
