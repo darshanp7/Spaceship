@@ -18,6 +18,8 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("TotalLevels", levels.Length);
         AllCollectiblesGenerated = false;
         AllObstaclesGenerated = false;
         currentLevelIndex = GetCurrentLevelIndex();

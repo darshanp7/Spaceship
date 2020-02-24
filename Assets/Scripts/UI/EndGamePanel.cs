@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EndGamePanel : MonoBehaviour
 {
+
+    public Button continueButton;
 
     private void OnEnable()
     {
@@ -18,6 +21,8 @@ public class EndGamePanel : MonoBehaviour
 
     private void Show()
     {
+        if (PlayerPrefs.GetInt("LevelProgress") >= PlayerPrefs.GetInt("TotalLevels"))
+            continueButton.gameObject.SetActive(false);
         this.transform.GetChild(0).gameObject.SetActive(true);
     }
 
