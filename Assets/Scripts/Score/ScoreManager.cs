@@ -9,9 +9,7 @@ public class ScoreManager : MonoBehaviour
     public int BronzeCount { get; private set; }
 
     public static event Action ScoreUpdated;
-
     private bool isScoreUpdated;
-
     private void OnEnable()
     {
         SpaceshipEventsBroker.CaughtCollectectibles += OnCaughtCollectible;

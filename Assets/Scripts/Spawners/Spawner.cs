@@ -22,18 +22,14 @@ public class Spawner : MonoBehaviour
         StartCoroutine(SpawnDelay(gameController.CurrentLevel.InitialDelay));
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void InitializeSpawnAreaCorners()
     {
         spawnArea = GetComponent<SpriteRenderer>();
-        xMax = spawnArea.bounds.max.x;
-        xMin = spawnArea.bounds.min.x;
-        yMax = spawnArea.bounds.max.y;
-        yMin = spawnArea.bounds.min.y;
+        var bounds = spawnArea.bounds;
+        xMax = bounds.max.x;
+        xMin = bounds.min.x;
+        yMax = bounds.max.y;
+        yMin = bounds.min.y;
     }
 
     public Vector3 GetRandomPointInSpawnArea()
@@ -41,7 +37,7 @@ public class Spawner : MonoBehaviour
         return new Vector3(UnityEngine.Random.Range(xMax, xMin), UnityEngine.Random.Range(yMax, yMin), 0);
     }
 
-    public IEnumerator SpawnDelay(int delay)
+    private IEnumerator SpawnDelay(int delay)
     {
         WaitForSeconds wait = new WaitForSeconds(delay);
         yield return wait;

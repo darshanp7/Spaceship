@@ -6,13 +6,8 @@ public class Silver : Collectible
 {
     public float silverSpeed;
 
-    void Awake()
+    private void Awake()
     {
         base.Speed = silverSpeed;
-    }
-    
-    void Update()
-    {
-        
     }
 }

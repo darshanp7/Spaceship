@@ -8,12 +8,12 @@ public class SpaceJunk : Obstacle
 
     private Rigidbody2D rigidBody;
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
-    
-    void Update()
+
+    private void Update()
     {
         rigidBody.angularVelocity = angVelocity;
         rigidBody.velocity = Vector3.left * 1;

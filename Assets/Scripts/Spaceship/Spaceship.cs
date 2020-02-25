@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class Spaceship : MonoBehaviour
 {
 
-    private const int collectiblesLayer = 11;
-    
-    void OnCollisionEnter2D(Collision2D collision)
+    private const int CollectiblesLayer = 11;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == collectiblesLayer)
+        if (collision.gameObject.layer == CollectiblesLayer)
         {
             SpaceshipEventsBroker.CallCaughtCollectibles(collision.gameObject.tag);
             Destroy(collision.gameObject);

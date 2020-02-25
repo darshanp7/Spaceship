@@ -4,14 +4,11 @@ public class Bomb : MonoBehaviour
 {
 
     public GameObject explodePrefab;
-    Animator explodeAnimator;
-    float explodeTime;
-
-    void Start()
-    {
-    }
     
-    void OnCollisionEnter2D(Collision2D collision)
+    private Animator explodeAnimator;
+    private float explodeTime;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         GetComponent<Collider2D>().enabled = false;
         GameObject explode = Instantiate(explodePrefab, this.transform);

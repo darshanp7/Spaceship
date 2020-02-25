@@ -8,16 +8,16 @@ public class Parallax : MonoBehaviour
     private float parallaxLayerLength;
     private Vector3 startPos;
 
-    void Start()
+    private void Start()
     {
         parallaxLayerLength = GetComponent<SpriteRenderer>().bounds.size.x;
         startPos = transform.position;
         //Debug.Log("Length of this Parallax Layer " + this.gameObject.name + " " + parallaxLayerLength);
     }
 
-    void Update()
+    private void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
+        transform.Translate(Time.deltaTime * speed * Vector2.left, Space.World);
         if(Mathf.Abs(transform.position.x) > parallaxLayerLength)
         {
             transform.position = new Vector3(startPos.x + parallaxLayerLength, 0, 0);

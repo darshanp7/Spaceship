@@ -7,20 +7,21 @@ public class RogueSatellite : Obstacle
     public float angVelocity;
 
     private Rigidbody2D rigidBody;
+    private static readonly int IsCollided = Animator.StringToHash("isCollided");
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    void OnCollisionEnter2D(Collision2D collision2D)
+    private void OnCollisionEnter2D(Collision2D collision2D)
     {
         GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         Animator asteroidBreakAnimator = transform.GetChild(0).GetComponent<Animator>();
-        asteroidBreakAnimator.SetBool("isCollided", true);
+        asteroidBreakAnimator.SetBool(IsCollided, true);
     }
 
-    void Update()
+    private void Update()
     {
         rigidBody.angularVelocity = angVelocity;
         rigidBody.velocity = Vector3.left * 1;

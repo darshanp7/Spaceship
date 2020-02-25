@@ -7,13 +7,8 @@ public class Gold : Collectible
 
     public float goldSpeed;
 
-    void Awake()
+    private void Awake()
     {
         base.Speed = goldSpeed;
-    }
-    
-    void Update()
-    {
-        
     }
 }

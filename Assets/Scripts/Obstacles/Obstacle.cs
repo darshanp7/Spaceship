@@ -11,13 +11,8 @@ public abstract class Obstacle : MonoBehaviour
 
     public float Speed { get; protected set; }
 
-    public float getDamageToBeInflicted()
+    public float GetDamageToBeInflicted()
     {
         return damageInflicted;
-    }
-    
-    public float getSpawnRate()
-    {
-        return spawnRate;
     }
 }

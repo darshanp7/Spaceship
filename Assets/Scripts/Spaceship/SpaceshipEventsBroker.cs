@@ -10,33 +10,23 @@ public class SpaceshipEventsBroker
 
     public static void CallDie()
     {
-        if (Die != null)
-            Die();
+        Die?.Invoke();
     }
 
     public static void CallHitByAsteroid(float damageAmount)
     {
-        if (HitByAsteroid != null)
-            HitByAsteroid(damageAmount);
+        HitByAsteroid?.Invoke(damageAmount);
     }
-
     public static void CallFireWeapon(float fuelAmount)
     {
-        if (FireWeapon != null)
-            FireWeapon(fuelAmount);
+        FireWeapon?.Invoke(fuelAmount);
     }
-
     public static void CallPushBack()
     {
-        if (PushedBack != null)
-            PushedBack();
+        PushedBack?.Invoke();
     }
-
     public static void CallCaughtCollectibles(string collectibleTag)
     {
-        if(CaughtCollectectibles != null)
-        {
-            CaughtCollectectibles(collectibleTag);
-        }
+        CaughtCollectectibles?.Invoke(collectibleTag);
     }
 }

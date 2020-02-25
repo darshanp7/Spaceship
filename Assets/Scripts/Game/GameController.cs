@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private int currentLevelIndex = 0;
 
+    private GameObject obstacles;
+    private GameObject collectibles;
+
     public LevelDefinition CurrentLevel { get; private set; }
     public float TimeLeftInLevel { get; private set; }
     public bool AllObstaclesGenerated { get; set; }
@@ -18,6 +21,8 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        collectibles = GameObject.FindGameObjectWithTag("Collectibles");
+        obstacles = GameObject.FindGameObjectWithTag("Obstacles");
         //PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("TotalLevels", levels.Length);
         AllCollectiblesGenerated = false;
@@ -34,9 +39,9 @@ public class GameController : MonoBehaviour
             EndLevel();
     }
 
-    private void StartLevel(int currentLevelIndex)
+    private void StartLevel(int level)
     {
-        CurrentLevel = levels[currentLevelIndex];
+        CurrentLevel = levels[level];
         TimeLeftInLevel = CurrentLevel.LevelDuration;
     }
 
@@ -56,8 +61,8 @@ public class GameController : MonoBehaviour
 
     private bool CheckLevelEnded()
     {
-        return GameObject.FindGameObjectWithTag("Obstacles").transform.childCount == 0
-            && GameObject.FindGameObjectWithTag("Collectibles").transform.childCount == 0
+        return obstacles.transform.childCount == 0
+            && collectibles.transform.childCount == 0
             && AllCollectiblesGenerated && AllCollectiblesGenerated;
     }
 

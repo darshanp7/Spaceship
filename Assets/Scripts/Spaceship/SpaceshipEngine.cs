@@ -10,17 +10,17 @@ public class SpaceshipEngine : MonoBehaviour
     private Rigidbody2D rigidBody;
     private bool isPushingBack = false;
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (!isPushingBack)
         {
             Vector3 direction = Vector3.up * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-            rigidBody.velocity = (direction * speed * Time.fixedDeltaTime); 
+            rigidBody.velocity = (Time.fixedDeltaTime * speed * direction); 
         }
         if(transform.position.x > 5)
         {
@@ -28,7 +28,7 @@ public class SpaceshipEngine : MonoBehaviour
         }
     }
 
-    public void PushBack()
+    private void PushBack()
     {
         SpaceshipEventsBroker.CallPushBack();
         isPushingBack = true;

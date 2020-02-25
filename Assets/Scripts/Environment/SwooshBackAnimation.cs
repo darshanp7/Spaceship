@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwooshBackAnimation : MonoBehaviour
 {
+    private static readonly int PlayPushBackEffect = Animator.StringToHash("PlayPushBackEffect");
 
     private void OnEnable()
     {
@@ -12,12 +13,12 @@ public class SwooshBackAnimation : MonoBehaviour
 
     private void PlaySwooshBackAnimation()
     {
-        this.GetComponent<Animator>().SetBool("PlayPushBackEffect", true);
+        this.GetComponent<Animator>().SetBool(PlayPushBackEffect, true);
     }
 
     private void OnSwooshBackEndEvent()
     {
-        this.GetComponent<Animator>().SetBool("PlayPushBackEffect", false);
+        this.GetComponent<Animator>().SetBool(PlayPushBackEffect, false);
     }
 
     private void OnDisable()

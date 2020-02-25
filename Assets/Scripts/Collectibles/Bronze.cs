@@ -7,13 +7,8 @@ public class Bronze : Collectible
 
     public float bronzeSpeed;
 
-    void Start()
+    private void Start()
     {
         base.Speed = bronzeSpeed;
-    }
-    
-    void Update()
-    {
-        
     }
 }

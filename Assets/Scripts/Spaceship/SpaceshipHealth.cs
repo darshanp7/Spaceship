@@ -13,7 +13,7 @@ public class SpaceshipHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    void Update()
+    private void Update()
     {
         if(health <= 0)
         {
@@ -23,11 +23,11 @@ public class SpaceshipHealth : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            float damageTaken = collision.gameObject.GetComponent<Obstacle>().getDamageToBeInflicted();
+            float damageTaken = collision.gameObject.GetComponent<Obstacle>().GetDamageToBeInflicted();
             health += damageTaken;
             SpaceshipEventsBroker.CallHitByAsteroid(damageTaken);
         }
