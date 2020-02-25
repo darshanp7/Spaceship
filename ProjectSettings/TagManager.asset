@@ -10,6 +10,7 @@ TagManager:
   - Obstacle
   - Obstacles
   - Collectibles
+  - ScoreManager
   layers:
   - Default
   - TransparentFX

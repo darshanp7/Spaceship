@@ -23,6 +23,7 @@ public class EndGamePanel : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("LevelProgress") >= PlayerPrefs.GetInt("TotalLevels"))
             continueButton.gameObject.SetActive(false);
+        GetComponent<EndScore>().InitializeScores();
         this.transform.GetChild(0).gameObject.SetActive(true);
     }
 

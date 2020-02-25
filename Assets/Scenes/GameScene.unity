@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 26960707}
   - component: {fileID: 26960706}
   - component: {fileID: 26960708}
+  - component: {fileID: 26960709}
   m_Layer: 5
   m_Name: EndGamePanel
   m_TagString: Untagged
@@ -209,6 +210,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueButton: {fileID: 399605714}
+--- !u!114 &26960709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26960704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8f0c7c1d6415c44a5e070bfa1d7ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCountText: {fileID: 1085304847}
+  silverCountText: {fileID: 1353568533}
+  bronzeCountText: {fileID: 1401343187}
 --- !u!1 &31397046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865625180}
   - component: {fileID: 865625181}
+  - component: {fileID: 865625182}
   m_Layer: 5
   m_Name: ScoreCounters
   m_TagString: Untagged
@@ -1938,6 +1955,21 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &865625182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865625179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44eaf765e11fdb4183ba5ad816938f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCount: {fileID: 461863914}
+  silverCount: {fileID: 2090143736}
+  bronzeCount: {fileID: 237632047}
 --- !u!1 &875982056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3853,6 +3885,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737963430}
   m_CullTransparentMesh: 0
+--- !u!1 &1772373914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772373916}
+  - component: {fileID: 1772373915}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: ScoreManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1772373915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772373914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2983ac7824c43148a4eb0c820bea256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1772373916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772373914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8087277, y: 0.41756076, z: -5.126383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1801617734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,10 +4163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90dbd5588efbc944da8da33b7d1b5e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldCountText: {fileID: 461863914}
-  silverCountText: {fileID: 2090143736}
-  bronzeCountText: {fileID: 237632047}
-  asteroidGenerator: {fileID: 251194268}
 --- !u!114 &1986788926
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@
 public class SpaceshipEventsBroker
 {
     public static event Action<float> HitByAsteroid;
+    public static event Action<string> CaughtCollectectibles;
     public static event Action Die;
     public static event Action<float> FireWeapon;
     public static event Action PushedBack;
@@ -29,5 +30,13 @@ public class SpaceshipEventsBroker
     {
         if (PushedBack != null)
             PushedBack();
+    }
+
+    public static void CallCaughtCollectibles(string collectibleTag)
+    {
+        if(CaughtCollectectibles != null)
+        {
+            CaughtCollectectibles(collectibleTag);
+        }
     }
 }
