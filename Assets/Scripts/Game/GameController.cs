@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     [Space]
     [SerializeField]
     private LevelDefinition[] levels;
+    [Space]
+    [Header("Current Level to be loaded")]
     [SerializeField]
     private int currentLevelIndex = 0;
 
@@ -15,7 +17,7 @@ public class GameController : MonoBehaviour
     private GameObject collectibles;
 
     public LevelDefinition CurrentLevel { get; private set; }
-    public float TimeLeftInLevel { get; private set; }
+    private float TimeLeftInLevel { get; set; }
     public bool AllObstaclesGenerated { get; set; }
     public bool AllCollectiblesGenerated { get; set; }
 
@@ -61,9 +63,9 @@ public class GameController : MonoBehaviour
 
     private bool CheckLevelEnded()
     {
-        return obstacles.transform.childCount == 0
-            && collectibles.transform.childCount == 0
-            && AllCollectiblesGenerated && AllCollectiblesGenerated;
+        return obstacles.transform.childCount == 0 // No Obstacles currently on the screen
+            && collectibles.transform.childCount == 0 // No Collectibles currently on the screen
+            && AllCollectiblesGenerated && AllCollectiblesGenerated; //All the obstacles and collectibles for this level has been generated
     }
 
     private int GetCurrentLevelIndex()
