@@ -51,13 +51,20 @@
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="EndGamePanel.cs" t="Include" />
-            <e p="EndScore.cs" t="Include" />
-            <e p="EnergyBar.cs" t="Include" />
-            <e p="HealthBar.cs" t="Include" />
-            <e p="HUD.cs" t="Include" />
-            <e p="HudScore.cs" t="Include" />
-            <e p="MainMenu.cs" t="Include" />
+            <e p="EndGameUI" t="Include">
+              <e p="EndGamePanel.cs" t="Include" />
+              <e p="EndScore.cs" t="Include" />
+            </e>
+            <e p="Hud" t="Include">
+              <e p="EnergyBar.cs" t="Include" />
+              <e p="HealthBar.cs" t="Include" />
+              <e p="HUD.cs" t="Include" />
+              <e p="HudScore.cs" t="Include" />
+            </e>
+            <e p="Menu" t="Include">
+              <e p="LevelMenu.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
+            </e>
           </e>
           <e p="Weapons" t="Include">
             <e p="Bomb.cs" t="Include" />
