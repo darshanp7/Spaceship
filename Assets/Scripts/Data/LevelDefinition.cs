@@ -3,20 +3,20 @@
 [CreateAssetMenu(menuName = "Custom/New Level Definition", fileName = "LevelDefinition")]
 public class LevelDefinition : ScriptableObject
 {
-    [SerializeField] private string levelName;
-    public string LevelName => levelName;
+//    [SerializeField] private string levelName;
+//    public string LevelName => levelName;
 
-    [SerializeField] private float levelDuration;
-    public float LevelDuration => levelDuration;
-    
-    [SerializeField] private bool hasPowerUps;
-    public bool HasPowerUps => hasPowerUps;
+    [field: SerializeField]
+    public float LevelDuration { get; }
 
-    [SerializeField] private int initialDelay;
-    public int InitialDelay => initialDelay;
+//    [SerializeField] private bool hasPowerUps;
+//    public bool HasPowerUps => hasPowerUps;
 
-    [SerializeField] private ObstacleSpawnData[] obstacleSpawnData;
-    public ObstacleSpawnData[] ObstacleSpawnData => obstacleSpawnData;
+    [field: SerializeField]
+    public int InitialDelay { get; }
+
+    [field: SerializeField]
+    public ObstacleSpawnData[] ObstacleSpawnData { get; }
 
     [SerializeField]
     private CollectibleSpawnData[] collectibleSpawnData;

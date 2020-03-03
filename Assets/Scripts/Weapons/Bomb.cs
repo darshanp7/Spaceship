@@ -7,6 +7,7 @@ public class Bomb : MonoBehaviour
     
     private Animator explodeAnimator;
     private float explodeTime;
+    private static readonly int IsTouchGround = Animator.StringToHash("isTouchGround");
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -22,6 +23,6 @@ public class Bomb : MonoBehaviour
             }
         }
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-        explodeAnimator.SetBool("isTouchGround", true); //IsTouchGround is equivalent to colliding with obstacles
+        explodeAnimator.SetBool(IsTouchGround, true); //IsTouchGround is equivalent to colliding with obstacles
     }
 }

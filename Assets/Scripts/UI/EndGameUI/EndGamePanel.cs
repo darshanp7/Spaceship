@@ -27,11 +27,6 @@ public class EndGamePanel : MonoBehaviour
         this.transform.GetChild(0).gameObject.SetActive(true);
     }
 
-    public void OnReplay()
-    {
-        SceneManager.LoadScene(1);
-    }
-
     public void OnContinue()
     {
         SceneManager.LoadScene(1);

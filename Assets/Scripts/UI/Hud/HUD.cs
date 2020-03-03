@@ -7,6 +7,7 @@ public class HUD : MonoBehaviour
 
     public GameObject topPanel;
     public GameObject bottomPanel;
+    private static readonly int PlayHideAnimation = Animator.StringToHash("PlayHideAnimation");
 
     private void OnEnable()
     {
@@ -17,8 +18,8 @@ public class HUD : MonoBehaviour
     private void Hide()
     {
         Debug.Log("Playing Hiding Animation");
-        topPanel.GetComponent<Animator>().SetBool("PlayHideAnimation", true);
-        bottomPanel.GetComponent<Animator>().SetBool("PlayHideAnimation", true);
+        topPanel.GetComponent<Animator>().SetBool(PlayHideAnimation, true);
+        bottomPanel.GetComponent<Animator>().SetBool(PlayHideAnimation, true);
     }
 
     private void OnDisable()

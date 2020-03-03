@@ -25,7 +25,7 @@ public class SpaceshipHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             float damageTaken = collision.gameObject.GetComponent<Obstacle>().GetDamageToBeInflicted();
             health += damageTaken;

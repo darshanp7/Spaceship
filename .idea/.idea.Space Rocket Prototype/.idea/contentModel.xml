@@ -30,7 +30,6 @@
           </e>
           <e p="Obstacles" t="Include">
             <e p="Asteroid.cs" t="Include" />
-            <e p="AsteroidGenerator.cs" t="Include" />
             <e p="BreakAnimation.cs" t="Include" />
             <e p="Obstacle.cs" t="Include" />
             <e p="ObstacleSpawner.cs" t="Include" />

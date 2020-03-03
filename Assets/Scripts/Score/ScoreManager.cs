@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     private bool isScoreUpdated;
     private void OnEnable()
     {
-        SpaceshipEventsBroker.CaughtCollectectibles += OnCaughtCollectible;
+        SpaceshipEventsBroker.CaughtCollectibles += OnCaughtCollectible;
     }
 
     private void Start()
@@ -34,12 +34,12 @@ public class ScoreManager : MonoBehaviour
         {
             BronzeCount += 1;
         }
-        if (ScoreUpdated != null)
-            ScoreUpdated();
+
+        ScoreUpdated?.Invoke();
     }
     
     private void OnDisable()
     {
-        SpaceshipEventsBroker.CaughtCollectectibles -= OnCaughtCollectible;
+        SpaceshipEventsBroker.CaughtCollectibles -= OnCaughtCollectible;
     }
 }
